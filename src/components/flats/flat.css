@@ -1,0 +1,30 @@
+.flat-div{
+    width: 160px;
+    height: 100px;
+    color: #123D6A;
+    font-weight: bold;
+    display: grid;
+    font-size: 13px;
+    margin-bottom: 60px;
+    
+}
+.flat-img{
+    width: 160px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.flat-title{
+    cursor: pointer;
+    margin-top: 2px;
+    text-align: center;
+}
+.flat-address{
+    margin-top: 2px;
+    text-align: left;
+}
+.flat-price{
+    margin-top: 5px;
+    text-align: left;
+}

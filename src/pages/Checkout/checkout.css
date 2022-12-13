@@ -1,0 +1,146 @@
+.checkout-div{
+    min-height: 100vh;
+    width: 100%;
+    color: #123D6A;
+    background-color: #FAF4F0;
+}
+
+.checkout-top{
+    display: flex;
+    align-items: center;
+    
+}
+.checkout-wrapper{
+    display: flex;
+
+}
+.back-icon{
+    color: #AB3B61;
+    height: 30px;
+    width: 30px;
+    margin-left: 114px;
+    cursor: pointer;
+}
+.back-span{
+    font-size: 15px;
+    cursor: pointer;
+}
+.checkout-h2{
+    margin-left: 410px;
+    font-size: 24px;
+    
+}
+
+.checkout-left{
+    margin-left: 208px;
+    display: grid;
+    font: 15px;
+}
+.booking-period-div{
+    display: flex;
+    margin-bottom: 20px;
+}
+.chechkout-arrive-date{
+   width: 147px;
+   margin-right: 16px;
+   background-color: #FAF4F0;
+}
+.checkout-leave-date{
+    width: 147px;
+    background-color: #FAF4F0;
+    
+}
+
+/* checkout left spans */
+.booking-period-span {
+    margin-bottom: 7px;
+}
+.surename-span{
+    margin-bottom: 7px;
+}
+.name-span{
+    margin-bottom: 7px;
+}
+.phone-span{
+    margin-bottom: 7px;
+}
+.email-span{
+    margin-bottom: 7px;
+}
+.cost-span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.price-span{
+    color: #AB3B61;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 140px;
+}
+.price-per-day-span{
+    opacity: 50%;
+    margin-bottom: 30px;
+}
+/* checkout left inputs */
+.surename-input{
+    margin-bottom: 10px;
+    width: 307px;
+    height: 32px;
+    border-color: #123D6A;
+    border-inline-color: #123D6A;
+    border-radius: 5px;
+    background-color: #FAF4F0;
+}
+.name-input{
+    margin-bottom: 10px;
+    width: 307px;
+    height: 32px;
+    border-color: #123D6A;
+    border-inline-color: #123D6A;
+    border-radius: 5px;
+    background-color: #FAF4F0;
+}
+.phone-input{
+    margin-bottom: 10px;
+    width: 307px;
+    height: 32px;
+    border-color: #123D6A;
+    border-inline-color: #123D6A;
+    border-radius: 5px;
+    background-color: #FAF4F0;
+}
+.email-input{
+    margin-bottom: 10px;
+    width: 307px;
+    height: 32px;
+    border-color: #123D6A;
+    border-inline-color: #123D6A;
+    border-radius: 5px;
+    background-color: #FAF4F0;
+}
+.confirm-btn{
+    width: 307px;
+    height: 38px;
+    background-color: #AB3B61;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.checkout-right{
+    margin-left: 250px;
+}
+.description-h4{
+    margin-top: 0;
+}
+.address-h4{
+    margin-bottom: 10px;
+}
+.address-p{
+    margin-bottom: 30px;
+}
+.checkout-map{
+    height: 325px;
+    width: 489px;
+}
