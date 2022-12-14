@@ -3,18 +3,28 @@ import Topbar from '../../components/topbar/Topbar'
 import ApartmentImg from "../../assets/img/apartment.jpg"
 import SimpleImageSlider from "react-simple-image-slider";
 import { DatePicker, Select } from 'antd';
-
-
-const images = [
-  { url: ApartmentImg },
-  { url: ApartmentImg },
-  { url: ApartmentImg }
-  
-];
+import moment from "moment";
 
 
 export default function Apartment() {
-  
+  const images = [
+    { url: ApartmentImg },
+    { url: ApartmentImg },
+    { url: ApartmentImg }
+  ];
+
+  const { RangePicker } = DatePicker;
+
+  const onChangeRange = (dates, dateStrings) => {
+    if (dates) {
+        console.log(encodeURIComponent(moment(dateStrings[0], 'DD/MM/YYYY HH').format()));
+        console.log(encodeURIComponent(moment(dateStrings[1], 'DD/MM/YYYY HH').format()))
+    } else {
+        console.log(null);
+        console.log(null);
+    }
+};
+
   return (
     <div className="apartment-div">
         <Topbar status={"show"}/>
@@ -49,7 +59,12 @@ export default function Apartment() {
              <span className="apartment-price">$50</span>
              <span className="perNight-span">per night</span>
              <div className="date-wrapper">
-             <DatePicker style={{border:"2px solid #AB3B61"}} className="apartment-date" />
+             <RangePicker
+                style={{border:"2px solid #AB3B61"}} 
+                className="apartment-date"
+                format="DD/MM/YYYY HH:00" 
+                showTime={{ format: "HH"}} 
+                onChange={onChangeRange} />
              <Select style={{border:"2px solid #AB3B61", borderRadius:"5px", inline:"none"}} className="select-people" placeholder="Number or people"/>
              <button className="book-now-btn">Book right now !</button> 
               </div> 

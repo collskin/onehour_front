@@ -6,7 +6,7 @@ import Flat from "./components/flats/Flat";
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <Apartment/>
     </div>
   );
 }
