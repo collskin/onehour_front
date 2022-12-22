@@ -5,12 +5,12 @@
     font-weight: bold;
     display: grid;
     font-size: 13px;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
     
 }
 .flat-img{
-    width: 160px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
     object-fit: contain;
     border-radius: 10px;
     cursor: pointer;

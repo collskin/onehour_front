@@ -45,11 +45,11 @@ overflow-x: hidden;
   }
 
   .flatwrapper::-webkit-scrollbar-track {
-    background: #f9eee8;
+    background: #edc8b8;
   }
 
   .flatwrapper::-webkit-scrollbar-thumb {
-    background-color: #edc8b8;
+    background-color: #f9eee8;
     border-radius: 15px;
-    border: 5px solid #edc8b8;
+    border: 5px solid #f9eee8;
   }

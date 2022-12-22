@@ -3,7 +3,10 @@ import Topbar from '../../components/topbar/Topbar'
 import ApartmentImg from "../../assets/img/apartment.jpg"
 import SimpleImageSlider from "react-simple-image-slider";
 import { DatePicker, Select } from 'antd';
-
+import {useDispatch} from "react-redux"
+import { useEffect } from "react";
+import { getSpacesById } from "../../features/backendRoutes/spaceSlice";
+import { useParams } from "react-router-dom";
 
 const images = [
   { url: ApartmentImg },
@@ -14,6 +17,16 @@ const images = [
 
 
 export default function Apartment() {
+
+  const dispatch = useDispatch();
+  const {id} = useParams();
+
+  useEffect(()=>{
+    dispatch(getSpacesById(id))
+
+  },[])
+
+
   
   return (
     <div className="apartment-div">

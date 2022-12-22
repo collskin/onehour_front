@@ -1,13 +1,25 @@
-import Home from "./pages/Home/Home";
-import Checkout from "./pages/Checkout/Checkout";
-import Apartment from "./pages/Apartment/Apartment";
-import Flat from "./components/flats/Flat";
+import { onehourRoutes } from "./routes/Routes";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+
 
 function App() {
+
   return (
-    <div className="App">
-      <Home/>
-    </div>
+   
+    <Router>
+    <Routes>
+    <>
+    {onehourRoutes.map((onehourRoutes,index) =>{
+      return <Route path={onehourRoutes.path} element={<onehourRoutes.Component/>} key={index}/>
+    })}
+    </>       
+    </Routes>
+    </Router>
+ 
   );
 }
 
