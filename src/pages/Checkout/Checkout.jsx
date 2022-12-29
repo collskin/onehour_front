@@ -2,15 +2,23 @@ import "./checkout.css"
 import Topbar from '../../components/topbar/Topbar'
 import {IoIosArrowBack} from "react-icons/io"
 import { DatePicker } from 'antd';
-import { MapContainer, TileLayer, } from 'react-leaflet'
+import { MapContainer, TileLayer, } from 'react-leaflet';
+import { useNavigate } from 'react-router-dom';
 
 export default function () {
+    
+    const navigate = useNavigate();
+    
+    function handleClick(){
+       navigate(-1);
+    }
+
   return (
     <div className="checkout-div">
         <Topbar/>
             <div className="checkout-top">
-                <IoIosArrowBack className="back-icon"/>
-                <span className="back-span">Back</span>
+                <IoIosArrowBack className="back-icon" onClick={handleClick}/>
+                <span className="back-span" onClick={handleClick}>Back</span>
                 <h2 className="checkout-h2">Confirmation and payment</h2>
             </div>
             <div className="checkout-wrapper">

@@ -53,7 +53,6 @@ export const getSpacesById = createAsyncThunk(
   async (id, thunkAPI) => {
     try {
       const resp = await baseUrl.get("space/" + id + "/");
-      console.log(resp);
       return resp.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error);
